@@ -18,4 +18,9 @@ spec:
         mountPath: /root/src
       - name: report
         mountPath: /root/report
+  volumes:
+    - name: src
+      emptyDir: [:]
+    - name: report
+      emptyDir: [:]
       
