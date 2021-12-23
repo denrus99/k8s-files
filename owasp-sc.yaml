@@ -8,5 +8,7 @@ spec:
   containers:
   - name: owasp
     image: owasp/dependency-check
-    tty: true
+    args: 
+    - "--scan /src"
+    - "--out /report"
       
