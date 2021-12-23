@@ -8,9 +8,7 @@ spec:
   containers:
   - name: owasp
     image: owasp/dependency-check
-    args:
-      - "scan /src"
-      - "out /report"
+    args: ["scan /src", "out /report"]
     resources:
       limits:
         memory: "128Mi"
