@@ -9,4 +9,14 @@ spec:
   - name: owasp
     image: owasp/dependency-check
     args: ["scan /src", "out /report"]
+    volumeMounts:
+      - name: report
+        mountPath: $WORKSPACE/report
+      - name: src
+        mountPath: $WORKSPACE/sdwar
+  volumes:
+    - name: report
+      emptyDir: [:]
+    - name: src
+      emptyDir: [:]
       
