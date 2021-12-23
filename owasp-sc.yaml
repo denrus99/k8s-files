@@ -18,4 +18,9 @@ spec:
         mountPath: $WORKSPACE/report
       - name: src
         mountPath: $WORKSPACE/sdwar
+  volumes:
+    - name: report
+      emptyDir: [:]
+    - name: src
+      emptyDir: [:]
       
