@@ -8,7 +8,6 @@ spec:
   containers:
   - name: owasp
     image: owasp/dependency-check
-    tty: true
     args: ["scan /src", "out /report"]
     volumeMounts:
       - name: report
@@ -17,7 +16,6 @@ spec:
         mountPath: $WORKSPACE/sdwar
   - name: debian
     image: debian
-    tty: true
   volumes:
     - name: report
       emptyDir: [:]
