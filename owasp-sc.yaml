@@ -13,14 +13,4 @@ spec:
     args: 
     - "--scan /src"
     - "--out /report"
-    volumeMounts:
-      - name: src
-        mountPath: /root/src
-      - name: report
-        mountPath: /root/report
-  volumes:
-    - name: src
-      emptyDir: [:]
-    - name: report
-      emptyDir: [:]
       
