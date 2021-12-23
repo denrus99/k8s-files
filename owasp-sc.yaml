@@ -14,8 +14,6 @@ spec:
         mountPath: $WORKSPACE/report
       - name: src
         mountPath: $WORKSPACE/sdwar
-  - name: debian
-    image: debian
   volumes:
     - name: report
       emptyDir: [:]
