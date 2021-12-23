@@ -9,8 +9,4 @@ spec:
   - name: owasp
     image: owasp/dependency-check
     args: ["scan /src", "out /report"]
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
       
