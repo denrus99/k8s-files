@@ -8,5 +8,5 @@ spec:
   containers:
   - name: owasp
     image: owasp/dependency-check
-    command: ["--scan /src", "--out /report"]
+    command: ["--scan /src --out /report"]
       
