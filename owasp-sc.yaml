@@ -9,11 +9,11 @@ spec:
   - name: owasp
     image: owasp/dependency-check
     args: 
-    - "-s /root"
-    - "-o /root"
+    - "-s /data"
+    - "-o /data"
     volumeMounts:
       - name: src
-        mountPath: /root
+        mountPath: /data
   volumes:
   - name: src
     emptyDir: [:]
