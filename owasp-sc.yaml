@@ -9,6 +9,6 @@ spec:
   - name: owasp
     image: owasp/dependency-check
     args: 
-    - "--scan /src"
-    - "--out /report"
+    - "-s /src"
+    - "-o /report"
       
