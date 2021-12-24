@@ -10,5 +10,8 @@ spec:
     image: owasp/dependency-check
     args: 
     - "-s /src"
-    - "-o /report"
+    - "-o /src"
+    volumeMounts:
+      - name: src
+        mountPath: /root
       
