@@ -16,4 +16,4 @@ spec:
         mountPath: /root
   volumes:
     - name: src
-      emptyDir: [:]        
+      emptyDir: {} 
